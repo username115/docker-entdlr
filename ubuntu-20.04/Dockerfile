@@ -12,5 +12,7 @@ RUN git clone https://github.com/tstraus/entdlr
 
 WORKDIR entdlr
 
+RUN git checkout b306a077d2f68bb4f2c0e74b7dbcb82e99ec24df
+
 RUN cmake .
 RUN cmake --build . --config Release --target install
